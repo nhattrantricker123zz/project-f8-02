@@ -23,13 +23,19 @@ body {
     color: #171100;
     font-family: var(--font-heading);
 }
-.heading.lv1{
+.heading.lv1 {
     font-size: 5.8rem;
     line-height: 1.17;
 }
 .heading.lv2 {
     font-size: 3.8rem;
     line-height: 1.26;
+}
+
+.heading.lv3 {
+    font-size: 2.8rem;
+    line-height: 1.67;
+    font-weight: 600;
 }
 .btn {
     display: inline-block;
@@ -270,7 +276,6 @@ a {
     align-items: center;
 }
 
-
 .popular .desc {
     width: 458px;
     font-weight: 400;
@@ -280,8 +285,8 @@ a {
     margin-top: 16px;
 }
 
-.popular__top .controls{
-    display: flex;  
+.popular__top .controls {
+    display: flex;
     gap: 18px;
 }
 
@@ -294,11 +299,94 @@ a {
     border-radius: 50%;
     border: 1px solid var(--primary-color);
     background-color: transparent;
-    color: var(--primary-color);    
+    color: var(--primary-color);
 }
 
 .popular__top .control-btn:hover {
     cursor: pointer;
     color: #fff;
     background-color: var(--primary-color);
+}
+
+/* Poplular course */
+
+.popular .course-list {
+    display: flex;
+    margin-top: 55px;
+    gap: 30px;
+}
+
+.popular .course-item {
+    flex: 1;
+    background: #ffffff;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    width: 370px;
+}
+
+.course-item-img {
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.course-list .info {
+    margin: 16px 22px 22px;
+}
+
+.course-list .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-star-icon {
+    width: 18px;
+    height: 18px;
+}
+.course-list .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-list .rating span {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    margin-left: 6px;
+    color: #fea31b;
+}
+
+.course-list .course-item-desc {
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+
+.course-list .foot {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-list .foot .price {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.popular .course-item .book-btn {
+    border: none;
+}
+
+.popular .course-item .book-btn:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
 }
