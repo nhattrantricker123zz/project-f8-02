@@ -568,11 +568,13 @@ a {
 .blog .blog-list {
     margin-top: 55px;
     display: flex;
+    overflow: hidden;
     gap: 0 30px;
 }
 
 .blog .item {
-    width: 33.33%;
+    flex-shrink: 0;
+    width: calc(33.33% - 20px);
     background: #ffffff;
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
     border-radius: 16px;
@@ -622,7 +624,7 @@ a {
     border-radius: 0.5px;
 }
 
-.blog .item .title a{
+.blog .item .title a {
     display: block;
     margin-top: 12px;
     font-weight: 600;
@@ -631,11 +633,109 @@ a {
     color: #171100;
 }
 
-
-.blog .item .btn{
+.blog .item .btn {
     margin-top: 12px;
+    font-size: 1.4rem;
 }
 
-.blog .item .btn:hover{
+.blog .item .btn:hover {
     background-color: var(--primary-color);
+}
+
+.blog .dots {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.blog .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #5f5b53;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.blog .dot.active {
+    cursor: default;
+    background-color: var(--primary-color);
+}
+
+.blog .dot:hover {
+    background-color: var(--primary-color);
+}
+
+/* Footer */
+
+.footer {
+    padding: 96px 135px 0;
+    background: #2e2100;
+}
+
+.footer .row {
+    display: flex;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554b;
+}
+
+.footer .row .column {
+    width: 21.6%;
+}
+.footer .row .column:first-child {
+    width: 35%;
+}
+
+.footer .row .desc {
+    width: 267px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    margin-top: 18px;
+    color: #bfbcb2;
+}
+
+.footer .row .social {
+    margin-top: 18px;
+    display: flex;
+    gap: 18px;
+}
+
+.footer .row .heading.lv3 {
+    display: inline-block;
+    position: relative;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ffffff;
+    border-bottom: 1px solid #59554b;
+    padding: 0 48px 14px 0;
+}
+
+.footer .row .list {
+    margin-top: 28px;
+}
+.footer .row a {
+    display: block;
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+}
+
+.footer .row .strong {
+    color: #ffffff;
+}
+
+.footer .cpr {
+    text-align: center;
+    padding: 28px 0;
+}
+
+.footer .cpr .desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #807d74;
 }
